@@ -28,7 +28,7 @@ function oddPositionedChars(str) {
      if (index%2!=0 && str.charAt(index)!=" ") {
         console.log(str.charAt(index));
     } 
-    process.stdout.write(`${index},`); 
+   
     }
 }
 console.log(`Given string is:Hard work always pays back`);
