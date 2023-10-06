@@ -1,4 +1,4 @@
-console.log(`********************* Array Numbers *********************`);
+console.log(`********************* Assignment *********************`);
 let arrayNumbers = [22, 11, 44, 55, 77, 33];
 console.log(`Given arrayNumers is: ${arrayNumbers} `);
 console.log(`================== Even positioned value================`);
@@ -17,3 +17,5 @@ for (let index = 0; index < arrayNum.length; index++) {
     sum = sum + element;
 }
     console.log(`The sum of total element in array is:`,sum);  
+
+
