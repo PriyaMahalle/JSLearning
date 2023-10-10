@@ -64,3 +64,9 @@ personElon.kidsName.push("stew");
 for (const kid of personElon.kidsName) {
     console.log(kid);
 }
+
+console.log(`========================`);
+ const arrayPerson = [personElon, personStew, personBill, personRatanSir];
+ for (const element of arrayPerson) {
+    console.log(element);
+ }
