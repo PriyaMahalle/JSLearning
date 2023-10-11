@@ -61,10 +61,10 @@ constructor(collegeName, Address, Departments, NAACGrade, Principle){
 //  console.log(collegeCOEP);
 
 const collegeCOETA = new College('COETA', 'Akola', '5', 'A', 'Dr. Prashant Thorat');
-//  console.log(collegeCOETA);
+//  console.log(collegeCOETA);bbv/
 
  const collegeSinhgad = new College('Sinhgad', 'Pune', '5', 'A+',  'Sandip sharma');
-//  console.log(collegeSinhgad);
+//  console.log(collegeSinhgad);  nnm
 
  const collegeVIT = new College('VIT', 'Pune', '5', 'A+', 'Dr. Pravin Shinde');
 //  console.log(collegeVIT);
