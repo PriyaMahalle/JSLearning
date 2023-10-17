@@ -1,27 +1,29 @@
 //WAP to find prime no or not
-
-// function prime(no) {
-//    for (let index = 2; index < no.length; index++) {
-//     if (no%index===0) {
-//         console.log(`not prime no`);
-//     }
-//     else if (no>1) {
-        
-//     } 
-        
-//    }
-// }
-// prime(11);
-// prime(8);
-
-function isPrime(num) {
-    var prime = num != 1;
-    for(var i=2; i<num; i++) {
-        if(num % i == 0) {
-            prime = false;
-            break;
-        }
-    }
-    return prime;
+const num = 7;
+ function isPrimeNum() {
+for (let index = 2; index < num; index++) {
+    if(num % index==0){
+        return false;
+    }  
 }
+    return true;
+}
+const result = isPrimeNum(11);
+console.log(`Is Number Prime: ${result}`);
+
+//Assignment: WAP to count the total prime number from the array.
+const array = [11, 3, 6, 10, 43, 29, 50];
+function isPrime(num) {
+    for (let index = 2; num > index; index++) {
+      if (num % index == 0) {
+        return false;
+      }
+    }
+    return num > 1;
+  }
+  
+  console.log(`Total number of prime number from the given array are:${array.filter(isPrime)}`);
+
+
+
 
