@@ -22,16 +22,16 @@ console.log(`==================== STEP- 1 ====================`);
 const arrayEmpSalary = arrayEmployees.map((employees)=>{
     return employees.emp_salary;
 })
-console.log(arrayEmpSalary);
+console.log(`List of all employee salary is: `,arrayEmpSalary);
 
 console.log(`==================== STEP- 2 ====================`);
 const arrayEmpDept = arrayEmployees.map((employees)=>{
     return employees.emp_dept;
 })
-console.log(arrayEmpDept);
+console.log(`List of department is: `,arrayEmpDept);
 
 console.log(`==================== STEP- 3 ====================`);
 const arrayEmpId = arrayEmployees.map((employees)=>{
     return employees.emp_id
 })
-console.log(arrayEmpId);
+console.log(`List of all employee ID is: `,arrayEmpId);

@@ -17,12 +17,14 @@ let thirdLastElement = arrayNumber[totalElement-3];
 console.log(`The third last element in given array is:${thirdLastElement}`);
 
 console.log(`========================= STEP- 4 ============================`);
+let even = [];
 let arrayNum = [20,31,40,25,23,11,29,9,60,2,11];
 console.log(`All even numbers in given array are:`);
  for (let index = 0; index < arrayNum.length; index++) {
     if (arrayNum[index]%2==0) {
         const element = arrayNum[index];  
         console.log(element);  
+        // even.push(arrayNum);
     } 
  }  
     
