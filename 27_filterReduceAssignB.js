@@ -19,31 +19,40 @@ const emp_mahi = new Employee(99, "Mahesh", "HR", 85000, "Infy");
 const arrayEmployees = [emp_anil, emp_radha, emp_rishi, emp_sonali, emp_monica, emp_viny, emp_mahi];
 console.log(`====================== STEP- 1 ======================== `);
 
-const arrayNamesWipro = arrayEmployees.filter( (employee) => {
-    return employee.emp_company=="Wipro";
- })
- console.log(arrayNamesWipro);
+const empName = arrayEmployees.reduce((runningTotal,value)=>{
+    if(value.emp_company == 'Wipro'){
+        console.log(`The employee name of company 'Wipro' is : ${value.emp_name}`);
+    };
+
+})
 
  console.log(`====================== STEP- 2 ======================== `);
- const arrayEmpDept = arrayEmployees.filter((employee)=>{
-    return employee.emp_dept=='IT' || employee.emp_dept=='HR';
- })
- console.log(arrayEmpDept);
+ 
+const arrayEmpDept = arrayEmployees.reduce((runningTotal,value)=>{
+    if( value.emp_dept=='IT' || value.emp_dept=='HR'){
+        console.log(`The employees wroking in IT and HR department: ${value.emp_name}`);
+    };
+
+})
+
 
  console.log(`====================== STEP- 3 ======================== `);
- const arrayEmpId = arrayEmployees.filter((employee)=>{
-    return employee.emp_id > 50;
+ const arrayEmpId = arrayEmployees.reduce((runingTotal, value)=>{
+    if (value.emp_id > 50) {
+        console.log(`The emplyoees whose ID is greater than 50:`,value.emp_name);
+    }
  })
- console.log(arrayEmpId);
+ 
 
-//  console.log(`====================== STEP- 4 ======================== `);
-//  const arrayEmpName = arrayEmployees.filter((employee)=>{
-//     return employee.emp_name.startsWith("A")||startsWith("V")||startsWith("M");
-//  })
-//  console.log(arrayEmpName);
+ console.log(`====================== STEP- 4 ======================== `);
+ const arrayEmpName = arrayEmployees.reduce((runingTotal, value)=>{
+    if (value.emp_name.startsWith("A")||value.emp_name.startsWith("V")||value.emp_name.startsWith("M")) {
+        console.log(value.emp_name);
+    }
+ })
 
 console.log(`====================== STEP- 5 ======================== `);
-const avgEmpSalary = arrayEmployees.filter((employee)=>{
-    return employee.emp_salary/arrayEmployees.length;
-})
-console.log(avgEmpSalary);
+const avgEmpSalary = arrayEmployees.reduce((runingTotal, value)=>{
+   return runingTotal + value.emp_salary;
+},0);
+console.log(`Avg salary is: `,avgEmpSalary/arrayEmployees.length);

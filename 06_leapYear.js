@@ -26,5 +26,6 @@ function leapYear(year){
  // console.log(`The undefined is not a leap year`);
   leapYear(1750);
  // console.log(`The 1750 not is a leap year`);
+ leapYear(1996);
 
 
